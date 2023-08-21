@@ -17,7 +17,7 @@ int main()
      
      for(i=0;i<n;i++)
     {
-         a[i]=a[i+1];
+        a[i]=a[i+1];
     }
 
      a[n-1]=c;

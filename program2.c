@@ -12,15 +12,14 @@ int main()
          printf("enter element array :");
          scanf("%d",&a[i]);
     }
-
-      
+     
      for(i=0;i<n;i++)
-    {
+    {  
         if(i==0)
-        {
-         c =a[0];
-         a[i]=a[n-1];
-         a[n-1]=c;
+        { 
+        c=a[0];
+        a[i]=a[n-1];
+        a[n-1]=c;
         }
     }
 
