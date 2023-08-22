@@ -80,13 +80,13 @@ int main()
      display();
 
      insert(30);
-     //insert(20);
-     //insert(10);
+     insert(20);
+     insert(10);
 
-     // delete();
+      delete();
+      display();
 
-
-     display();
+      
       delete();
       delete();
       delete();
