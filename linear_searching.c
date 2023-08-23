@@ -4,6 +4,8 @@
                  //Enter Search element: 1
                  //Element is found at 4 position
 
+// => short array mate , compering 
+
 #include <stdio.h>
 #include <stdlib.h>
 #define n 10
@@ -15,10 +17,10 @@ int linear(int x)
     {
         if (x == a[i])
         {
-            return i +1;    // i+1 -> position,    i -> index
+            return i+1;    // i+1 -> position,    i -> index
         }
     }
-    return -1;
+    return 0;
 }
 
 
@@ -36,7 +38,7 @@ int main()
 
     p = linear(x);
 
-    if (p == -1){
+    if (p == 0){
         printf("Element is not found....");
     }
     else{
