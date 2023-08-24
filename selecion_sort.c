@@ -34,3 +34,7 @@ int main()
         printf("%d ",a[i]);
     }
 }
+
+//selection short
+
+//->aek value badha j sathe compering kare

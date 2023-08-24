@@ -74,14 +74,14 @@ int main()
 {
     insertend(10);
     insertend(20);
-   // insertend(30);
+    insertend(30);
    //  deletend();
    
      display();
 
-     insert(30);
-     insert(20);
-     insert(10);
+    // insert(30);
+    // insert(20);
+    // insert(10);
 
       delete();
       display();
@@ -90,8 +90,11 @@ int main()
       delete();
       delete();
       delete();
+      delete();
+      delete();
      display();
 
 
 }
 
+// LIFO

@@ -30,7 +30,7 @@ int bineary()
 }
 int main()
 {
-    int x,p;
+    int p;
 
     
       for(int i=0; i<n; i++)
