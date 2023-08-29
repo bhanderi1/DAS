@@ -28,6 +28,8 @@ int bineary()
       return -1;
 
 }
+
+
 int main()
 {
     int p;

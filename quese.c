@@ -1,4 +1,7 @@
 //fifo  =frist in frist out
+//simple queue
+//frist delete last insert
+
 
 #include<stdio.h>
 #include<stdlib.h>
@@ -11,7 +14,7 @@ int arr[n];
 int insert(int val)
 {
 
-    if(r >= n-1)
+    if(r >= n)
     {
          printf("array is full...\n");
     }
@@ -30,7 +33,6 @@ int insert(int val)
        }
     }
 }
-
 
 int delete()
 {
@@ -63,28 +65,30 @@ int display()
 
 }
 
-
 int main()
 {
    insert(10);
    insert(20);
    insert(30);
    insert(40);
-   insert(50);
-  // insert(60);
-  // insert(70);
-  // insert(80);
-  // insert(90);
-  // insert(100);
-
+    display();
+ 
+   delete();
    display();
-   delete();
-   delete();
-   delete();
-   delete();
-   delete();
-   delete();
-   delete();
 
+  insert(50);
+  insert(60);
    display();
+
+   delete();
+   display();
+
+
 }
+
+//output:-
+
+//10 20 30 40 
+//20 30 40
+//20 30 40 50 60
+//30 40 50 60
