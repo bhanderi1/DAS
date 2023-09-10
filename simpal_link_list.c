@@ -66,19 +66,78 @@ void deleteEnd()
     return;  
 }
 
+void firstinsert(int val)
+{
+    struct node *ptr =head;
+    struct node *temp =malloc (sizeof(struct node));
+
+    temp ->data =val;
+    temp ->next =head;
+
+    if(temp ->next =head)
+    {
+        head =temp;
+        return;
+    }
+    while(head ==NULL)
+    {
+       head =temp;
+       return;
+   }
+}
+
+void firstdelete()
+{
+    struct node *ptr =head;
+
+    if(head =ptr ->next)
+    {
+        free(ptr);
+    }    
+}
+
+void midinsert(int val,int position)
+{
+    struct node *ptr =head;
+    struct node *temp =malloc (sizeof(struct node));
+
+    temp ->data =val; 
+   
+    while(ptr->data !=position)
+    { 
+       ptr=ptr->next; 
+    } 
+
+     temp->next =ptr->next;
+     ptr->next =temp;
+     return;
+} 
+
+void middelete(int position)
+{
+
+    struct node *ptr = head;
+    struct node *p ;
+    while(ptr->data != position){
+        p = ptr;
+        ptr = ptr->next;
+    }
+    p->next = ptr->next;
+    free(ptr);
+    return;
+}
+
 int main()
 {
     insertend(10);
-    insertend(20);
-    insertend(30);
-    insertend(40);
-    insertend(50);
-    insertend(60);
     display();
 
-    deleteEnd();
-    deleteEnd();
-    deleteEnd();
-    deleteEnd();
+    firstinsert(40);
+    display();
+     
+    midinsert(90,40);
+    display();
+
+    middelete(10);
     display();
 }
